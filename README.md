@@ -1,5 +1,7 @@
 # EE599 Final Project - TrojanMap
 
+Video Link: https://youtu.be/jkNPqro5HRs
+
 ## TrojanMap
 
 This is the final project for EE599, this assignment explores the use of graph algorithms with various points near the USC campus. These points are stored as nodes, and they contain information that contain the ID, latitude and longitude, location name, and neighbors. The specific node class can be seen below. 
