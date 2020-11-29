@@ -1,5 +1,6 @@
 # EE599 Final Project - TrojanMap
 
+Student: Nathan Peura
 Video Link: https://youtu.be/jkNPqro5HRs
 
 ## TrojanMap
