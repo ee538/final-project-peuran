@@ -546,12 +546,12 @@ Within #4, TSP there will be an option to choose brute force or 2opt method, 2 o
 
 ## Test the program
 
-We create some tests for you to test your program, please run
+Already created tests:
 ```shell
 bazel test tests:tests:trojanmap_test
 ```
 
-Please add you test in the [trojanmap_test_student.cc](tests/trojanmap_test_student.cc) and run
+Student tests: 
 
 ```shell
 bazel test tests:trojanmap_test_student
