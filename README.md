@@ -444,11 +444,16 @@ Input: 6 locations
 
 <p align="center"><img src="img/output_BF_6.gif" alt="Routing" width="500"/></p>
 
+Final:
+<p align="center"><img src="img/BF_final.png" alt="Routing" width="500"/></p>
+
 
 > 2-Opt 
 
 <p align="center"><img src="img/output_2opt_6.gif" alt="Routing" width="500"/></p>
 
+Final:
+<p align="center"><img src="img/2opt_final.png" alt="Routing" width="500"/></p>
 
 ---
 
@@ -533,6 +538,10 @@ If everything is correct, this menu will show up.
 **************************************************************
 ```
 
+Within #3, CalculateShortestPath there will be an option to choose dijkstra's or Bellman-ford, bellman-ford will run a lot slower but still get the same output as dijkstra's
+
+Within #4, TSP there will be an option to choose brute force or 2opt method, 2 opt will find the path a lot quicker with large N, but small n both will find in similar time. 
+
 ## Test the program
 
 We create some tests for you to test your program, please run
@@ -547,30 +556,4 @@ bazel test tests:trojanmap_test_student
 ```
 
 
-## Report and Rubrics:
-
-Your final project should be checked into Github. The README of your project is your report.
-
-### Report:
-
-Your README file should include two sections:
-
-1. High-level overview of your design (Use diagrams and pictures)
-2. Detailed description of each function and its time complexity.
-3. Discussion, conclusion, and lessons learned.
-
-### Rubrics:
-
-1. Implementation of auto complete: 10 points.
-2. Implementation of GetPosition: 5 points.
-3. Implementation of shortest path: 20 points.
-4. Implementation of Travelling Trojan: 
-   1. Brute Force: 10 points
-   2. 2-opt: 15 points.
-   3. Animated plot: 10 points.
-5. Creating reasonable unit tests: 20 points.
-6. Video presentation and report: 10 points.
-7. **Extra credit items**: Maximum of 20 points:
-   1. A second shortest path algorithms (For example, you can implement both Bellman-Ford and Dijkstra): 10 points.
-   2. [3-opt](http://cs.indstate.edu/~zeeshan/aman.pdf) (If you chose to implement 2-opt for Travelling Trojan): 20 points.
-   3. [Genetic algorithm](https://www.geeksforgeeks.org/traveling-salesman-problem-using-genetic-algorithm/) implementation for Travelling Trojan: 20 points.
+Thank you!
