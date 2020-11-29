@@ -6,6 +6,7 @@
 #include <iostream>
 #include <map>
 #include <vector>
+#include <unordered_map>
 
 // A Node is the location of one point in the map.
 class Node {
@@ -92,10 +93,32 @@ class TrojanMap {
 
   //-----------------------------------------------------
 
-  
+  void createWeights();
+  void createWeightsPathNodes(std::vector<std::string> &location_ids);
+
+  std::vector<std::string> CalculateShortestPath_bellmanFord(std::string location1_name, std::string location2_name);
+
+  void PermuteCombs(std::vector<int> &nums,std::vector<std::vector<std::string>> &result,std::vector<std::string> curResult);
+
+  std::string getID(std::string name);
+
+  //added for dijkstra
+  std::vector<std::vector<double>> weight_;
+  std::vector<std::vector<double>> weight_TS;
+
+  // double TSP_Helper2(int start, int cur_node, double cur_cost,std::vector<int> &path);
+  // double TSP_Helper1(int start, int cur_node, double cur_cost,double &min_cost, std::vector<int> path);
+  std::pair<double, std::vector<std::vector<std::string>>> TravellingTrojan_2opt(std::vector<std::string> &location_ids);
+
+  std::unordered_map<std::string,int> IDnode;
+  std::unordered_map<int,std::string> nodeID;
+
  private:
   // A map of ids to Nodes.
   std::map<std::string, Node> data;
+
+
+  
 };
 
 #endif
